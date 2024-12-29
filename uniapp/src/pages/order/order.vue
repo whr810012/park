@@ -192,6 +192,7 @@ export default {
 			}
 			const time = formatTimestamp(new Date().getTime())
 			this.$http.post(`${finishOrder}`, {
+				stallId: item.stallId,
 				orderid: item.orderid,
 				status: 3,
 				outTime: time
