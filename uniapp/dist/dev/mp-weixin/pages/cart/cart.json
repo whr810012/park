@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "购物车",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "rf-attr-content": "/components/rf-attr-content/index"
+  }
+}

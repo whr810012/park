@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "详情展示",
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "rf-product-detail": "/components/rf-product-detail/index",
+    "rf-back-top": "/components/rf-back-top/index",
+    "rf-no-data": "/components/rf-no-data/index"
+  }
+}

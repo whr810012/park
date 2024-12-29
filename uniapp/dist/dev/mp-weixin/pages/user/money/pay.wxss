@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #fff;
+}
+.pay {
+  width: 100%;
+}
+.pay .pay-section {
+  height: 400rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.pay .pay-section .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 60vw;
+}
+.pay .pay-section .tips-wrapper {
+  text-align: center;
+}
+.pay .pay-section .tips-wrapper .title {
+  font-size: 32rpx;
+  margin-bottom: 20rpx;
+}
+.pay .pay-section .tips-wrapper .tip {
+  font-size: 74rpx;
+}
+.price-box {
+  background-color: #fff;
+  height: 265rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+  color: #909399;
+}
+.price-box .price {
+  font-size: 50rpx;
+  color: #303133;
+  margin-top: 12rpx;
+}
+.pay-type-list {
+  margin: 60rpx 0;
+  background-color: #fff;
+  padding: 0 40rpx;
+}
+.pay-type-list .type-item {
+  padding: 0 30rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  margin-bottom: 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 30rpx;
+  position: relative;
+  border: 2rpx solid rgba(0, 0, 0, 0.12);
+}
+.pay-type-list .type-item-active {
+  border: 2rpx solid;
+}
+.pay-type-list .iconfont {
+  font-size: 45rpx;
+  margin: 0 20rpx;
+  color: #909399;
+}
+.pay-type-list .tit {
+  font-size: 28rpx;
+  margin-bottom: 4rpx;
+}
+.pay-type-list .tit-active {
+  color: #303133;
+}
+.pay-type-list .con {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 24rpx;
+  color: #909399;
+}
+.pay-type-list .con .tit {
+  margin-right: 20rpx;
+}
+.pay-type-list .radio radio {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+.confirm-btn {
+  height: 86rpx;
+  line-height: 86rpx;
+  width: 70%;
+  margin-top: 144rpx;
+}

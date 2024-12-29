@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.uni-rate.data-v-393e2090 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  line-height: 0;
+  font-size: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+}
+.iconfont.data-v-393e2090 {
+  font-size: 36rpx;
+}
+.uni-rate__icon.data-v-393e2090 {
+  position: relative;
+  line-height: 0;
+  font-size: 0;
+}
+.uni-rate__icon-on.data-v-393e2090 {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  text-align: left;
+}

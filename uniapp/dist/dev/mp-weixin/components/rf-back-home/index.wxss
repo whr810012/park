@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.home.data-v-375f5baa {
+  position: fixed;
+  color: white;
+  right: 40rpx;
+  bottom: 40rpx;
+  text-align: center;
+  z-index: 33;
+}
+.home .homeCon.data-v-375f5baa {
+  overflow: hidden;
+  width: 0.86rem;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.home .homeCon .wrapper.data-v-375f5baa {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20rpx;
+}
+.home .homeCon .wrapper .iconfont.data-v-375f5baa {
+  font-size: 45rpx;
+  opacity: 1;
+  color: #fff;
+  z-index: 92;
+}
+.home .on.data-v-375f5baa {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: 72rpx;
+  margin-bottom: 20rpx;
+}
+.home .menu.data-v-375f5baa {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.home .menu .iconfont.data-v-375f5baa {
+  font-size: 45rpx;
+  opacity: 1;
+  color: #fff;
+  z-index: 92;
+}

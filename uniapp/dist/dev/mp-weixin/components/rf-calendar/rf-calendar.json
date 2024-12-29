@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rf-calendar-item": "/components/rf-calendar/rf-calendar-item"
+  }
+}

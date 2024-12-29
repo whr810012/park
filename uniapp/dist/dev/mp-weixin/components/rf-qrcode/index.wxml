@@ -1,0 +1,1 @@
+<view><block wx:if="{{filePath}}"><image style="{{'width:'+(size+'px')+';'+('height:'+(size+'px')+';')}}" src="{{filePath}}"></image></block><block wx:if="{{!filePath}}"><canvas style="{{'width:'+(size+'px')+';'+('height:'+(size+'px')+';')}}" id="{{cid}}" canvas-id="{{cid}}"></canvas></block></view>

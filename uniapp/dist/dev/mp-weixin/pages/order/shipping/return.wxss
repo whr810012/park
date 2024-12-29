@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #fff;
+}
+.evaluation {
+  background-color: #fff;
+  height: 100vh;
+  padding: 20rpx;
+}
+.evaluation .product-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.evaluation .product-info .product-image {
+  width: 200rpx;
+  height: 150rpx;
+}
+.evaluation .product-info .product-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  margin-left: 20rpx;
+}
+.evaluation .product-info .product-content .product-name {
+  font-size: 28rpx;
+  color: #303133;
+  line-height: 32rpx;
+  min-height: 60rpx;
+}
+.evaluation .product-info .product-content .product-sku-name {
+  display: block;
+  font-size: 28rpx;
+  color: #303133;
+}
+.evaluation .input-content {
+  padding: 80rpx 0 40rpx;
+}
+.evaluation .input-content .input-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 30rpx;
+  background: #f8f6fc;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 4px;
+  margin-bottom: 40rpx;
+}
+.evaluation .input-content .input-item:last-child {
+  margin-bottom: 0;
+}
+.evaluation .input-content .input-item .tit {
+  width: 120rpx;
+  font-size: 26rpx;
+  color: #606266;
+}
+.evaluation .input-content .input-item input {
+  width: calc(100% - 120rpx);
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+.evaluation .input-content .input-item .date {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+.evaluation .confirm-btn {
+  width: 630rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  border-radius: 50px;
+  margin-top: 50rpx;
+  font-size: 32rpx;
+}
+.evaluation .confirm-btn:after {
+  border-radius: 100px;
+}

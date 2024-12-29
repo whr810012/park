@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #f8f8f8;
+}
+.authorization-list .rf-list .left .head_portrait {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 30rpx 30rpx 30rpx 0;
+  border-radius: 50%;
+}
+.authorization-list .rf-list .mid {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.authorization-list .rf-list .mid .title {
+  font-size: 32rpx;
+}
+.authorization-list .rf-list .mid .title .iconweixinzhifu {
+  margin-right: 10rpx;
+  color: #36cb59;
+}
+.authorization-list .rf-list .mid .time {
+  font-size: 24rpx;
+  color: #909399;
+}
+.authorization-list .rf-list .right .rf-button {
+  font-size: 24rpx;
+  padding: 10rpx 20rpx;
+}

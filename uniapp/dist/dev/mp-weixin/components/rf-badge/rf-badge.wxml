@@ -1,0 +1,1 @@
+<block wx:if="{{text}}"><text data-event-opts="{{[['tap',[['onClick']]]]}}" class="{{['uni-badge uni-badge--small data-v-63a5a578','bg-'+themeColor.name]}}" style="{{(badgeStyle)}}" bindtap="__e">{{text}}</text></block>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "积分详情",
+  "usingComponents": {
+    "rf-load-more": "/components/rf-load-more/rf-load-more"
+  }
+}

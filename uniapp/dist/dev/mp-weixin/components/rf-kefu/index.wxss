@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.rf-kefu.data-v-0594907a {
+  width: 100%;
+}
+.rf-kefu .wrapper.data-v-0594907a {
+  height: 72rpx;
+  width: 72rpx;
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  right: 40rpx;
+  bottom: 130rpx;
+  z-index: 98;
+}
+.rf-kefu .iconfont.data-v-0594907a {
+  font-size: 48rpx;
+  opacity: 1;
+  color: #fff;
+  z-index: 92;
+}
+.rf-kefu .share-bg.data-v-0594907a {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 98;
+}
+.rf-kefu .share-bg image.data-v-0594907a {
+  margin-top: -10vw;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 12rpx;
+  z-index: 98;
+}

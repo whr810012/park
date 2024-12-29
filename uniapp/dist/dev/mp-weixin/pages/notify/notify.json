@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "公告中心",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "rf-load-more": "/components/rf-load-more/rf-load-more"
+  }
+}

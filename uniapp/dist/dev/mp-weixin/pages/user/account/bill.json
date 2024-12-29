@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "账单明细",
+  "usingComponents": {
+    "rf-load-more": "/components/rf-load-more/rf-load-more"
+  }
+}

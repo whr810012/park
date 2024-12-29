@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.uni-calendar-item__weeks-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 1px 0;
+  position: relative;
+}
+.uni-calendar-item__weeks-box-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 24.4, 51);
+}
+.uni-calendar-item__weeks-box-item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.uni-calendar-item__weeks-box-circle {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #dd524d;
+}
+.uni-calendar-item__weeks-box .uni-calendar-item--disable {
+  cursor: default;
+}
+.uni-calendar-item--disable .uni-calendar-item__weeks-box-text-disable {
+  color: #D1D1D1;
+}
+.uni-calendar-item--today {
+  position: absolute;
+  top: 10px;
+  right: 17%;
+  background-color: #dd524d;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.uni-calendar-item--extra {
+  color: #dd524d;
+  opacity: 0.8;
+}
+.uni-calendar-item__weeks-box .uni-calendar-item--checked {
+  background-color: #007aff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+}
+.uni-calendar-item--checked .uni-calendar-item--checked-text {
+  color: #fff;
+}
+.uni-calendar-item--multiple .uni-calendar-item--checked-range-text {
+  color: #333;
+}
+.uni-calendar-item--multiple {
+  background-color: #F6F7FC;
+}
+.uni-calendar-item--multiple .uni-calendar-item--before-checked,
+.uni-calendar-item--multiple .uni-calendar-item--after-checked {
+  background-color: #007aff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid #F6F7FC;
+}
+.uni-calendar-item--before-checked .uni-calendar-item--checked-text,
+.uni-calendar-item--after-checked .uni-calendar-item--checked-text {
+  color: #fff;
+}
+.uni-calendar-item--before-checked-x {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-sizing: border-box;
+  background-color: #F6F7FC;
+}
+.uni-calendar-item--after-checked-x {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #F6F7FC;
+}

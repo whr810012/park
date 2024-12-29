@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page.data-v-15afe969 {
+  background-color: #fff;
+}
+.integral.data-v-15afe969 {
+  background-color: #fff;
+  height: 100vh;
+}
+.integral .header.data-v-15afe969 {
+  opacity: 0.9;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 420rpx;
+  font-size: 28rpx;
+  color: #fff;
+  padding: 20rpx 0;
+  text-align: center;
+  position: relative;
+}
+.integral .header .title.data-v-15afe969 {
+  font-size: 24rpx;
+  margin: 10rpx 0;
+}
+.integral .header .num.data-v-15afe969 {
+  /*<!--color: $base-color;-->*/
+  font-size: 52rpx;
+  font-weight: lighter;
+  line-height: 1;
+}
+.integral .header .line.data-v-15afe969 {
+  width: 10%;
+  height: 3rpx;
+  background-color: #fff;
+  margin: 20rpx auto 30rpx;
+}
+.integral .header .nav.data-v-15afe969 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.integral .header .nav .item.data-v-15afe969 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.integral .header .nav .item .num.data-v-15afe969 {
+  font-size: 36rpx;
+  display: block;
+  line-height: 1;
+}
+.integral .header .tab.data-v-15afe969 {
+  position: absolute;
+  bottom: -2rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  border-radius: 20rpx 20rpx 0 0;
+  background-color: #f7f7f7;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #bbb;
+}
+.integral .header .tab .item.data-v-15afe969 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+  line-height: 80rpx;
+}
+.integral .header .tab .on.data-v-15afe969 {
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 20rpx 0 0 0;
+}
+.integral .header .tab .on.data-v-15afe969:last-child {
+  border-radius: 0 20rpx 0 0;
+}
+.wrapper .list1.data-v-15afe969 {
+  background-color: #fff;
+}
+.wrapper .list1 .tip.data-v-15afe969 {
+  font-size: 24rpx;
+  width: 90%;
+  margin: 20rpx 5%;
+  height: 64rpx;
+  line-height: 64rpx;
+  border-radius: 30rpx;
+  background-color: #fff5e2;
+  border: 1px solid #ffeac1;
+  color: #c8a86b;
+  text-align: center;
+}
+.wrapper .list1 .list.data-v-15afe969 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 20rpx 36rpx;
+  background: #fff;
+  position: relative;
+}
+.wrapper .list1 .list .wrapper.data-v-15afe969 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.wrapper .list1 .list .wrapper .address-box.data-v-15afe969 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+  color: #303133;
+}
+.wrapper .list1 .list .wrapper .u-box.data-v-15afe969 {
+  color: #909399;
+  font-size: 24rpx;
+}
+.wrapper .list1 .list .change-num.data-v-15afe969 {
+  font-size: 36rpx;
+  color: #606266;
+}
+.wrapper .list1 .list .change-num-add.data-v-15afe969 {
+  color: #16ac57;
+}
+.wrapper .list1 .list .change-num-reduce.data-v-15afe969 {
+  color: #fa436a;
+}
+.wrapper .list2.data-v-15afe969 {
+  /*background-color: #F76260;*/
+}
+.wrapper .list2 .item.data-v-15afe969 {
+  background-image: -webkit-linear-gradient(left, #fff7e7 0%, #fffdf9 100%);
+  background-image: linear-gradient(to right, #fff7e7 0%, #fffdf9 100%);
+  width: 90%;
+  margin: 20rpx 5%;
+  height: 120rpx;
+  line-height: 120rpx;
+  position: relative;
+  border-radius: 20rpx;
+  padding: 0 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.wrapper .list2 .item .pictrue.data-v-15afe969 {
+  width: 60rpx;
+  height: 100rpx;
+  margin: 20rpx 0;
+}
+.wrapper .list2 .item .pictrue image.data-v-15afe969 {
+  width: 80%;
+  height: 80%;
+}
+.wrapper .list2 .item .name.data-v-15afe969 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #c8a86b;
+  margin: 0 20rpx;
+}
+.wrapper .list2 .item .earn.data-v-15afe969 {
+  font-size: 24rpx;
+  color: #c8a86b;
+  border: 2rpx solid #c8a86b;
+  text-align: center;
+  height: 48rpx;
+  margin: 36rpx 0;
+  width: 120rpx;
+  border-radius: 10rpx;
+}

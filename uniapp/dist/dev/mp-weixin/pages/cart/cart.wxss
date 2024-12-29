@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #fff;
+}
+.checkbox-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.checkbox-box .checkbox {
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 100%;
+  border: solid 2rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.checkbox-box .checkbox .on {
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 100%;
+}
+.checkbox-box .checkbox-disabled {
+  border: solid 2rpx #C0C4CC;
+}
+.checkbox-box .text {
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.status {
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  top: 0;
+}
+.header {
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+.header .title {
+  font-size: 36rpx;
+}
+.place {
+  background-color: #fff;
+  height: 100rpx;
+}
+.goods-list {
+  width: 100%;
+  padding: 0 0 100rpx 0;
+}
+.goods-list .btn-clear {
+  text-align: right;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+}
+.goods-list .tis {
+  width: 100%;
+  height: 60rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 32rpx;
+}
+.empty {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: #fff;
+}
+.empty .icongouwuche {
+  font-size: 132rpx;
+}
+.empty .empty-tips {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 26rpx;
+  color: #C0C4CC;
+}
+.empty .empty-tips .navigator {
+  margin-left: 16rpx;
+}
+.footer {
+  width: 100%;
+  padding: 0 2%;
+  background-color: #fbfbfb;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 28rpx;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 5;
+}
+.footer .delBtn {
+  border: solid 1rpx;
+  padding: 0 24rpx;
+  height: 42rpx;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer .settlement {
+  width: 52%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer .settlement .sum {
+  font-size: 28rpx;
+  margin-right: 8rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+.footer .settlement .sum .money {
+  font-weight: 600;
+}
+.footer .settlement .btn {
+  padding: 0 26rpx;
+  height: 50rpx;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 30rpx;
+}
+.popup .layer {
+  bottom: 0;
+}

@@ -1,0 +1,60 @@
+
+.spinner-inside.data-v-2d096fbd {
+	margin: 25px auto;
+	position: relative;
+	text-align: center;
+
+	-webkit-animation: rotate-data-v-2d096fbd 2s infinite linear;
+	animation: rotate-data-v-2d096fbd 2s infinite linear;
+}
+.dot1.data-v-2d096fbd,
+.dot2.data-v-2d096fbd {
+	width: 60%;
+	height: 60%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	background-color: #67cf22;
+	border-radius: 100%;
+
+	-webkit-animation: bounce-data-v-2d096fbd 2s infinite ease-in-out;
+	animation: bounce-data-v-2d096fbd 2s infinite ease-in-out;
+}
+.dot2.data-v-2d096fbd {
+	top: auto;
+	bottom: 0px;
+	-webkit-animation-delay: -1s;
+	animation-delay: -1s;
+}
+@-webkit-keyframes rotate-data-v-2d096fbd {
+100% {
+		-webkit-transform: rotate(360deg);
+}
+}
+@keyframes rotate-data-v-2d096fbd {
+100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+}
+}
+@-webkit-keyframes bounce-data-v-2d096fbd {
+0%,
+	100% {
+		-webkit-transform: scale(0);
+}
+50% {
+		-webkit-transform: scale(1);
+}
+}
+@keyframes bounce-data-v-2d096fbd {
+0%,
+	100% {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+}
+50% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+}
+}
+

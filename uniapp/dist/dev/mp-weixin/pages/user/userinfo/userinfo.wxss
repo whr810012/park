@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page.data-v-85cda378 {
+  background-color: #fff;
+}
+.userinfo .user-section.data-v-85cda378 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  height: 320rpx;
+  padding: 40rpx 30rpx 0;
+  overflow: hidden;
+  position: relative;
+}
+.userinfo .user-section .bg.data-v-85cda378 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  opacity: 0.84;
+}
+.userinfo .user-section .portrait-box.data-v-85cda378 {
+  clear: both;
+  z-index: 2;
+}
+.userinfo .user-section .portrait.data-v-85cda378 {
+  width: 130rpx;
+  height: 130rpx;
+  padding: 0px !important;
+}
+.userinfo .user-section .yticon.data-v-85cda378 {
+  position: absolute;
+  line-height: 1;
+  z-index: 5;
+  font-size: 48rpx;
+  color: #fff;
+  padding: 4rpx 6rpx;
+  border-radius: 6rpx;
+  background: rgba(0, 0, 0, 0.4);
+}
+.userinfo .user-section .pt-upload-btn.data-v-85cda378 {
+  right: 0;
+  bottom: 10rpx;
+}
+.userinfo .user-section .bg-upload-btn.data-v-85cda378 {
+  right: 20rpx;
+  bottom: 16rpx;
+}
+.userinfo .input-content.data-v-85cda378 {
+  padding: 40rpx 60rpx;
+}
+.userinfo .input-content .input-item.data-v-85cda378 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 30rpx;
+  background: #f8f6fc;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 4px;
+  margin-bottom: 30rpx;
+}
+.userinfo .input-content .input-item.data-v-85cda378:last-child {
+  margin-bottom: 0;
+}
+.userinfo .input-content .input-item .tit.data-v-85cda378 {
+  width: 100rpx;
+  font-size: 26rpx;
+  color: #606266;
+}
+.userinfo .input-content .input-item input.data-v-85cda378 {
+  width: calc(100% - 100rpx);
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+.userinfo .input-content .input-item .date.data-v-85cda378 {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+.userinfo .input-content .input-item .gender-item.data-v-85cda378 {
+  margin-right: 20rpx;
+}
+.userinfo .input-content .input-item .gender-item .gender-item-text.data-v-85cda378 {
+  padding-left: 10rpx;
+}
+.userinfo .input-content .input-item .gender-item radio .wx-radio-input.wx-radio-input-checked.data-v-85cda378 {
+  background: #fa436a;
+  border-color: #fa436a;
+}

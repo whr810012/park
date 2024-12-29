@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.rf-live.data-v-6364c406 {
+  width: 100%;
+}
+.rf-live .wrapper.data-v-6364c406 {
+  padding: 20rpx 10rpx 10rpx;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12rpx;
+  position: fixed;
+  text-align: center;
+  right: 40rpx;
+  top: 40%;
+  z-index: 98;
+  color: #fff;
+}
+.rf-live .wrapper .iconfont.data-v-6364c406 {
+  font-size: 32rpx;
+  opacity: 1;
+  z-index: 92;
+}
+.rf-live .wrapper .content.data-v-6364c406 {
+  font-size: 24rpx;
+  margin: 10rpx 0;
+}
+.rf-live .wrapper .btn.data-v-6364c406 {
+  margin-top: 30rpx;
+  font-size: 24rpx;
+  background-color: #fa436a;
+  opacity: 1;
+  width: 100rpx;
+  height: 42rpx;
+  line-height: 42rpx;
+  border-radius: 18rpx;
+}

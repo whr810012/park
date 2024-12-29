@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "rf-image": "/components/rf-image/rf-image",
+    "rf-qrcode": "/components/rf-qrcode/index"
+  }
+}

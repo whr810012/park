@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "rf-pick-regions": "/components/rf-pick-regions/index"
+  }
+}

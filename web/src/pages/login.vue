@@ -1,27 +1,36 @@
-<!-- 文件名：@/components/Login.vue -->
 <template>
-  <div class="login10">
-    <div class="login10-bg"></div>
-    <div class="login10-container">
-      <div class="login10-container-head">登录</div>
-      <div class="login10-container-wrap">
-        <i class="iconfont icon-yonghu"></i>
-        <input v-model="form.username" type="text" name="username" placeholder="邮箱地址：">
-      </div>
-      <div class="login10-container-wrap">
-        <i class="iconfont icon-mima"></i>
-        <input v-model="form.password" type="password" name="password" placeholder="密码：">
-      </div>
-      <div class="login10-container-access">
-        <input type="checkbox" v-model="form.remember">
-        <span>我已阅读并同意《用户协议》,《隐私政策》</span>
-      </div>
-
-      <input class="login10-container-action btn" type="button" value="登录" @click="onSubmit">
-      <div class="login10-container-signup">
-        <span>没有账号? <a href="/register">注册</a></span>
-      </div>
-    </div>
+  <div class="login-container">
+    <el-row>
+      <el-col :lg="16" :md="12" :sm="24" :xl="16" :xs="24">
+        <div style="color: transparent">占位符</div>
+      </el-col>
+      <el-col :lg="8" :md="12" :sm="24" :xl="8" :xs="24">
+        <el-form ref="form" class="login-form" label-position="left" :model="form" :rules="rules">
+          <div class="title">hello !</div>
+          <div class="title-tips">欢迎来到{{ title }}！</div>
+          <el-form-item prop="username" style="margin-top: 40px">
+            <span class="svg-container svg-container-admin">
+              <vab-icon :icon="['fas', 'user']" />
+            </span>
+            <el-input v-model.trim="form.username" v-focus placeholder="请输入用户名" tabindex="1" type="text" />
+          </el-form-item>
+          <el-form-item prop="password">
+            <span class="svg-container">
+              <vab-icon :icon="['fas', 'lock']" />
+            </span>
+            <el-input :key="passwordType" ref="password" v-model.trim="form.password" placeholder="请输入密码" tabindex="2"
+              :type="passwordType" />
+            <span v-if="passwordType === 'password'" class="show-password">
+              <vab-icon :icon="['fas', 'eye-slash']" />
+            </span>
+            <span v-else class="show-password">
+              <vab-icon :icon="['fas', 'eye']" />
+            </span>
+          </el-form-item>
+          <el-button class="login-btn" :loading="loading" type="primary" @click="onSubmit">登录</el-button>
+        </el-form>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -40,144 +49,156 @@ export default {
   },
   methods: {
     onSubmit() {
-      if (!this.form.remember) {
-        this.$message.warning('请勾选用户协议')
+      if (!this.form.username) {
+        this.$message.warning('请输入邮箱地址')
         return
-      } else {
-        if (!this.form.username) {
-          this.$message.warning('请输入邮箱地址')
-          return
-        } else if (!this.form.password) {
-          this.$message.warning('请输入密码')
-          return
-        }
-        Login({username:this.form.username, password:this.form.password}).then(res => {
-          this.$message.success('登录成功')
-          console.log('登录成功',res.data.data);
-          const data = res.data.data
-          if (data.img) {
-            // 将json转换成对象
-            data.img = JSON.parse(data.img)
-          }
-          this.$store.commit('setUserInfo', data)
-          localStorage.setItem('userInfo', JSON.stringify(data))
-          if (res.data.data.isadmin) {
-            this.$router.push({path:'/admin'})
-          } else {
-            this.$router.push({path:'/goods'})
-          }
-        }).catch(() => {
-          this.$message.error('邮箱/密码错误')
-        })
+      } else if (!this.form.password) {
+        this.$message.warning('请输入密码')
+        return
       }
+      Login({ email: this.form.username, password: this.form.password }).then(res => {
+        this.$message.success('登录成功')
+        console.log('登录成功', res.data.data);
+        const data = res.data.data
+        if (data.img) {
+          // 将json转换成对象
+          data.img = JSON.parse(data.img)
+        }
+        this.$store.commit('setUserInfo', data)
+        localStorage.setItem('userInfo', JSON.stringify(data))
+        this.$router.push({ path: '/admin' })
+      }).catch(() => {
+        this.$message.error('邮箱/密码错误')
+      })
     }
   }
 }
 </script>
 
-<style lang='scss' scoped>
-.btn {
-  border: none;
-  outline: none;
-  width: 100%;
-  height: 40px;
-  font-size: 16px;
-  border-radius: 40px;
-
-}
-
-.login10 {
-  overflow: hidden;
+<style lang="scss" scoped>
+.login-container {
   height: 100vh;
-  position: relative;
-  font-family: sans-serif;
+  background: url('~@/assets/login_images/background.jpg') center center fixed no-repeat;
+  background-size: cover;
 
-  &-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-45deg, rgba(64, 115, 158, 1.0), rgba(39, 60, 117, 1.0));
-    background-size: cover;
-    z-index: -100;
+  .title {
+    font-size: 54px;
+    font-weight: 500;
+    color: rgba(14, 18, 26, 1);
   }
 
-  &-container {
-    background: rgba(255, 255, 255, .6);
-    margin: 60px auto 0;
-    width: 400px;
-    border-radius: 16px;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  .title-tips {
+    margin-top: 29px;
+    font-size: 26px;
+    font-weight: 400;
+    color: rgba(14, 18, 26, 1);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    border-top: 2px solid rgba(255, 255, 255, .3);
-    border-left: 2px solid rgba(255, 255, 255, .3);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+  .login-btn {
+    display: inherit;
+    width: 220px;
+    height: 60px;
+    margin-top: 5px;
+    border: 0;
 
-    &-head {
-      font-size: 30px;
-      margin: 40px 0;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .login-form {
+    position: relative;
+    max-width: 100%;
+    margin: calc((100vh - 425px) / 2) 10% 10%;
+    overflow: hidden;
+
+    .forget-password {
+      width: 100%;
+      margin-top: 40px;
+      text-align: left;
+
+      .forget-pass {
+        width: 129px;
+        height: 19px;
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(92, 102, 240, 1);
+      }
+    }
+  }
+
+  .tips {
+    margin-bottom: 10px;
+
+    span {
+      &:first-of-type {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .title-container {
+    position: relative;
+
+    .title {
+      margin: 0 auto 40px auto;
+      font-size: 34px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+  .svg-container {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 16px;
+    color: #d7dee3;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .show-password {
+    position: absolute;
+    top: 14px;
+    right: 25px;
+    font-size: 16px;
+    color: #d7dee3;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  ::v-deep {
+    .el-form-item {
+      padding-right: 0;
+      margin: 20px 0;
+      color: #454545;
+      background: transparent;
+      border: 1px solid transparent;
+      border-radius: 2px;
+
+      &__content {}
+
+      &__error {
+        position: absolute;
+        top: 100%;
+        left: 18px;
+        line-height: 18px;
+      }
     }
 
-    &-wrap {
-      width: 100%;
-      height: 40px;
-      background: rgba(245, 246, 250, 1.0);
-      border-radius: 40px;
-      margin-bottom: 20px;
-      display: grid;
-      grid-template-columns: 15% 86%;
+    .el-input {
+      box-sizing: border-box;
 
       input {
-        outline: none;
-        border: none;
-        background: none;
-        font-size: 16px;
-
-        &::placeholder {
-          font-size: 16px;
-        }
+        height: 58px;
+        padding-left: 45px;
+        line-height: 58px;
+        background: #f6f4fc;
+        border: 0;
       }
-
-      i {
-        line-height: 40px;
-        text-align: center;
-      }
-    }
-
-    &-access {
-      margin-bottom: 20px;
-      width: 100%;
-      padding: 0 .4rem;
-      display: flex;
-      justify-content: flex-end;
-
-      span {
-        margin-left: 8px;
-      }
-    }
-
-    &-action {
-      margin-bottom: 20px;
-    }
-
-    &-or {
-      margin-bottom: 20px;
-      display: flex;
-      width: 100%;
-
-      &:before,
-      &:after {
-        content: '';
-        border-bottom: 1px solid black;
-        flex: 1 1;
-        margin: auto;
-      }
-    }
-
-    &-signup {
-      margin: 20px 0;
     }
   }
 }

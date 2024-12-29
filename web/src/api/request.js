@@ -1,234 +1,208 @@
-import axios from "axios";
+// import axios from "axios";
 import { request } from "./index";
+import axios from "axios";
 
-// 地图多边形
-// 获取点位
-export function getOptions() {
-  return request({
-    url: "/getLocation/options",
-    method: "GET",
-  });
-}
-// 提交点位
-export function subOptions(data) {
-  return request({
-    url: "/Location/subOptions",
-    method: "POST",
-    data
-  });
-}
-// 修改点位
-export function changeOptions(data) {
-  return request({
-    url: "/Location/changeOptions",
-    method: "POST",
-    data
-  })
-}
-// 删除点位
-export function deleteOptions(data) {
-  return request({
-    url: "/Location/deleteOptions",
-    method: "POST",
-    data
-  })
-}
-// 数据点
-// 获取数据点
-export function getMarkers() {
-  return request({
-    url: "/getLocation/markers",
-    method: "GET",
-  });
-}
-// 提交数据点
-export function subMarkers(data) {
-  return axios({
-    url: "http://localhost:3000/Location/subMarkers",
-    method: "POST",
-    data
-  })
-}
-// 修改数据点
-export function updateMarkers(data) {
-  return axios({
-    url: "http://localhost:3000/Location/updateMarkers",
-    method: "POST",
-    data
-  })
-}
-// 删除数据点
-export function deleteMarkers(data) {
-  return request({
-    url: "/Location/deletemarkers",
-    method: "POST",
-    data
-  })
-}
+/***************后台管理员接口************************************************/ 
 // 登录
 export function Login (data) {
   return request({
-    url:"/login",
+    url:"/admin/login",
     method:"POST",
     data
   })
 }
-// 注册
-export function Register (data) {
+
+// 查询所有管理员
+export function getAllAdmin () {
   return request({
-    url:"/register",
+    url:"/adminall",
+    method:"GET"
+  })
+}
+
+// 增加管理员
+export function addAdmin (data) {
+  return request({
+    url:"/admin/add",
     method:"POST",
     data
   })
 }
-// 获取个人信息
-export function getMyInfo (data) {
+
+// 删除管理员
+export function deleteAdmin (data) {
   return request({
-    url:"/getMyInfo",
-    method:"POST",
-    data
-  })
-}
-// 获取所有用户
-export function getUser (data) {
-  return request({
-    url:"/getuser",
+    url:`/admin/delete?adminid=${data}`,
     method:"get",
     data
   })
 }
-// 修改用户信息
-export function changeUser(data) {
+
+// 批量删除
+export function deleteAdmins (data) {
   return request({
-    url:"/changeuser",
-    method:"POST",
-    data
-  })
-}
-// 删除用户
-export function deleteUser(data) {
-  return request({
-    url:"/deleteuser",
-    method:"POST",
-    data
-  })
-}
-// ai描述
-export function sendAi(data){
-  return request({
-    url:"/ai/goods",
-    method:"POST",
-    data
-  })
-}
-// 上传商品信息
-export function uploadGoods (data) {
-  return axios({
-    url:"http://localhost:3000/goods/upload",
-    method:"POST",
-    data
-  })
-}
-//  获取商品信息
-export function getGoods () {
-  return request({
-    url:"/goods",
-    method:"GET"
-  })
-}
-// 删除商品
-export function deleteGoods (data) {
-  return request({
-    url:"/goods/delete",
-    method:"POST",
-    data
-  })
-}
-// 上架商品
-export function putGoods (data) {
-  return request({
-    url:"/goods/put",
-    method:"POST",
-    data
-  })
-}
-// 下架商品
-export function downGoods (data) {
-  return request({
-    url:"/goods/down",
-    method:"POST",
-    data
-  })
-}
-// 商品详情
-export function getGoodsDetail (data) {
-  return request({
-    url:"/goods/detail",
-    method:"POST",
-    data
-  })
-}
-// 编辑商品
-export function editorGoods(data) {
-  return axios({
-    url: "http://localhost:3000/goods/updateGoods",
-    method: "POST",
-    data
-  })
-}
-// 购买商品
-export function buyGoods(data) {
-  return request({
-    url:"/goods/buy",
-    method:"POST",
-    data
-  })
-}
-// 获取我的订单
-export function getMyOrder(data) {
-  return request({
-    url:"/goods/sold",
-    method:"POST",
-    data
-  })
-}
-// 获取我卖出的商品
-export function getMyBuyGoods(data) {
-  return request({
-    url:"/goods/buyed",
-    method:"POST",
-    data
-  })
-}
-// 同意交易
-export function agreeOver(data) {
-  return request({
-    url:"/goods/over",
-    method:"POST",
-    data
-  })
-}
-// 拒绝交易
-export function refuseOver(data) {
-  return request({
-    url:"/goods/refuse",
-    method:"POST",
-    data
-  })
-}
-// 完成交易
-export function finishOver(data) {
-  return request({
-    url:"/goods/finish",
+    url:"/admin/delete",
     method:"POST",
     data
   })
 }
 
-// 获取所有订单
-export function getAllOrder(data) {
+// 修改管理员
+export function updateAdmin (data) {
   return request({
-    url:"/goods/allOrder",
+    url:"/admin/amend",
+    method:"POST",
+    data
+  })
+}
+
+/***************后台用户相关接口************************************************/ 
+
+// 查询所有用户
+export function getAllUser () {
+  return request({
+    url:"/queryuserall",
+    method:"GET"
+  })
+}
+// 注销用户
+export function deleteUser (data) {
+  return request({
+    url:`/user/detele`,
+    method:"post",
+    data
+  })
+}
+
+/***************后台公告相关接口************************************************/ 
+
+// 查询所有公告
+export function getAllNotice () {
+  return request({
+    url:"/noticeall",
+    method:"GET"
+  })
+}
+// 删除公告
+export function deleteNotice (data) {
+  return request({
+    url:`/notice/delete`,
+    method:"post"
+    ,data
+  })
+}
+// 修改公告
+export function updateNotice (data) {
+  return request({
+    url:"/notice/amend",
+    method:"POST",
+    data
+  })
+}
+
+// 增加公告
+export function addNotice (data) {
+  return request({
+    url:"/notice/add",
+    method:"POST",
+    data
+  })
+}
+
+/***************后台车位相关接口************************************************/ 
+// 获取所有车位
+export function getAllPark () {
+  return request({
+    url:"/stallall",
+    method:"GET"
+  })
+}
+// 新增
+export function addPark (data) {
+  return axios({
+    url:"http://localhost:8080/stall/add",
+    method:"POST",
+    data
+  })
+}
+// 删除
+export function deletePark (data) {
+  return request({
+    url:`/stall/delete`,
+    method:"post",
+    data
+  })
+}
+// 修改
+export function updatePark (data) {
+  return request({
+    url:"/stall/amend",
+    method:"POST",
+    data
+  })
+}
+
+/***************后台订单相关接口************************************************/ 
+// 获取所有订单
+export function getAllOrder () {
+  return request({
+    url:"/orderall",
+    method:"GET"
+  })
+}
+// 查询订单详情
+export function getOrderDetail (data) {
+  return request({
+    url:`/order/all?orderid=${data}`,
+    method:"get"
+  })
+}
+
+/***************后台区域相关接口************************************************/ 
+// 获取所有区域
+export function getAllArea () {
+  return request({
+    url:"/areaAll",
+    method:"GET"
+  })
+}
+// 删除区域
+export function deleteArea (data) {
+  return request({
+    url:`/area/delete`,
+    method:"post",
+    data
+  })
+}
+// 新增区域
+export function addArea (data) {
+  return request({
+    url:"/area/add",
+    method:"POST",
+    data
+  })
+}
+// 编辑区域
+export function updateArea (data) {
+  return request({
+    url:"/area/amend",
+    method:"POST",
+    data
+  })
+}
+
+// 获取评价
+export function getComment () {
+  return request({
+    url:"/evaluateall",
+    method:"GET"
+  })
+}
+
+// 修改订单
+export function updateOrder (data) {
+  return request({
+    url:"/order/amend",
     method:"POST",
     data
   })

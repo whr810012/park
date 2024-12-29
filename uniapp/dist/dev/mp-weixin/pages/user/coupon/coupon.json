@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "我的优惠券",
+  "usingComponents": {
+    "rf-load-more": "/components/rf-load-more/rf-load-more",
+    "uni-drawer": "/components/uni-drawer/uni-drawer"
+  }
+}

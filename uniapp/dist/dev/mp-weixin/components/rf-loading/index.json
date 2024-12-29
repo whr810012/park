@@ -1,0 +1,13 @@
+{
+  "component": true,
+  "usingComponents": {
+    "loop": "/components/rf-loading/loaders/loop",
+    "bounce": "/components/rf-loading/loaders/bounce",
+    "double-bounce": "/components/rf-loading/loaders/double-bounce",
+    "double-cube": "/components/rf-loading/loaders/double-cube",
+    "double-dot": "/components/rf-loading/loaders/double-dot",
+    "rotate-plane": "/components/rf-loading/loaders/rotate-plane",
+    "scale-out": "/components/rf-loading/loaders/scale-out",
+    "shrink-rect": "/components/rf-loading/loaders/shrink-rect"
+  }
+}

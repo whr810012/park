@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "发票管理",
+  "usingComponents": {
+    "rf-load-more": "/components/rf-load-more/rf-load-more"
+  }
+}

@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.uni-calendar-item__weeks-box.data-v-3f1a84fc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.uni-calendar-item__weeks-box-text.data-v-3f1a84fc {
+  font-size: 22rpx;
+  color: #333;
+}
+.uni-calendar-item__weeks-lunar-text.data-v-3f1a84fc {
+  font-size: 18rpx;
+  color: #333;
+}
+.uni-calendar-item__weeks-box-item.data-v-3f1a84fc {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 85rpx;
+}
+.uni-calendar-item__weeks-box-circle.data-v-3f1a84fc {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: #dd524d;
+}
+.uni-calendar-item--disable.data-v-3f1a84fc {
+  background-color: rgba(249, 249, 249, 0.3);
+  color: #c0c0c0;
+}
+.uni-calendar-item--isDay-text.data-v-3f1a84fc {
+  color: #fa436a;
+}
+.uni-calendar-item--isDay.data-v-3f1a84fc {
+  background-color: #fa436a;
+  opacity: 0.8;
+  color: #fff;
+}
+.uni-calendar-item--extra.data-v-3f1a84fc {
+  color: #dd524d;
+  opacity: 0.8;
+}
+.uni-calendar-item--checked.data-v-3f1a84fc {
+  background-color: #fa436a;
+  color: #fff;
+  opacity: 0.8;
+}
+.uni-calendar-item--multiple.data-v-3f1a84fc {
+  background-color: #fa436a;
+  color: #fff;
+  opacity: 0.8;
+}

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page.data-v-245cbd88 {
+  background-color: #f8f8f8;
+}
+.helper-detail .detail.data-v-245cbd88 {
+  text-align: center;
+  padding: 20rpx 20rpx;
+}
+.helper-detail .detail .title.data-v-245cbd88 {
+  font-size: 32rpx;
+  color: #303133;
+  padding: 20rpx 0;
+}

@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "订单售后",
+  "usingComponents": {
+    "rf-image": "/components/rf-image/rf-image",
+    "list-cell": "/components/rf-list-cell/index"
+  }
+}

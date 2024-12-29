@@ -1,0 +1,143 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/notice/notice",
+    "pages/index/notice/detail",
+    "pages/index/search/search",
+    "pages/notify/notify",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/profile/profile"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/set",
+      "pages": [
+        "set",
+        "authorization/list",
+        "feedback/detail",
+        "feedback/list",
+        "feedback/feedback",
+        "about/about",
+        "about/detail",
+        "helper/index",
+        "helper/detail",
+        "invoice/list",
+        "invoice/invoice",
+        "invoice/manage"
+      ]
+    },
+    {
+      "root": "pages/product",
+      "pages": [
+        "list",
+        "product"
+      ]
+    },
+    {
+      "root": "pages/order",
+      "pages": [
+        "order",
+        "refund",
+        "search",
+        "refund/refund",
+        "evaluation/evaluation",
+        "evaluation/list",
+        "detail",
+        "create/order",
+        "shipping/shipping",
+        "shipping/return"
+      ]
+    },
+    {
+      "root": "pages/public",
+      "pages": [
+        "register",
+        "login",
+        "logintype",
+        "password"
+      ]
+    },
+    {
+      "root": "pages/marketing",
+      "pages": [
+        "live/list"
+      ]
+    },
+    {
+      "root": "pages/user",
+      "pages": [
+        "userinfo/userinfo",
+        "collection/collection",
+        "footprint/footprint",
+        "coupon/coupon",
+        "coupon/detail",
+        "coupon/list",
+        "address/address",
+        "address/manage",
+        "money/pay",
+        "money/success",
+        "account/recharge",
+        "account/level",
+        "account/account",
+        "account/bill",
+        "account/integral"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "停车小程序",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#fa436a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab-home.png",
+        "selectedIconPath": "static/tab-home-rf.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "static/tab-cate.png",
+        "selectedIconPath": "static/tab-cate-rf.png",
+        "text": "评价"
+      },
+      {
+        "pagePath": "pages/notify/notify",
+        "iconPath": "static/tab-notify.png",
+        "selectedIconPath": "static/tab-notify-rf.png",
+        "text": "公告"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/tab-my.png",
+        "selectedIconPath": "static/tab-my-rf.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {},
+  "plugins": {},
+  "uniStatistics": {
+    "enable": true
+  },
+  "usingComponents": {
+    "rf-image": "/components/rf-image/rf-image",
+    "rf-empty": "/components/rf-empty/index",
+    "rf-loading": "/components/rf-loading/index",
+    "rf-load-progress": "/components/rf-load-progress/rf-load-progress",
+    "rf-parser": "/components/rf-parser/index",
+    "rf-back-top": "/components/rf-back-top/index",
+    "rf-tag": "/components/rf-tag/index",
+    "rf-nav-detail": "/components/rf-nav-detail/index",
+    "cu-custom": "/components/cu-custom/index",
+    "rf-back-home": "/components/rf-back-home/index"
+  }
+}

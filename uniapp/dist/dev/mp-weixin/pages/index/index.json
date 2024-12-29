@@ -1,0 +1,18 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "backgroundColorTop": "#F7F7F7",
+  "backgroundColorBottom": "#F7F7F7",
+  "onReachBottomDistance": 50,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "rf-floor-index": "/components/rf-floor-index/index",
+    "rf-swipe-dot": "/components/rf-swipe-dot/index",
+    "rf-product-list": "/components/rf-product-list/index",
+    "rf-search-bar": "/components/rf-search-bar/index",
+    "list-cell": "/components/rf-list-cell/index",
+    "rf-swiper-slide": "/components/rf-swiper-slide/index",
+    "rf-index-evaluate": "/components/rf-index-evaluate/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "rf-image": "/components/rf-image/rf-image",
+    "rf-kefu": "/components/rf-kefu/index",
+    "rf-no-data": "/components/rf-no-data/index"
+  }
+}

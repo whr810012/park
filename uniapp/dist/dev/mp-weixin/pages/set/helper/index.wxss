@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page.data-v-0b041537 {
+  background-color: #f8f8f8;
+}
+.helperList.data-v-0b041537 {
+  margin-top: 20rpx;
+}
+.helperList .helper-child-item.data-v-0b041537 {
+  margin: 20rpx 30rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}

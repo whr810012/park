@@ -5,8 +5,8 @@
         <home-menu></home-menu>
       </el-aside>
       <el-container>
-        <el-header>
-          <el-image class="header" :src="require('../menu/header.png')"></el-image>
+        <el-header style="background-color: black;">
+          <!-- <el-image class="header" :src="require('../menu/header.png')"></el-image> -->
           <bread-crumb></bread-crumb>
           <user-info></user-info>
         </el-header>
@@ -52,9 +52,9 @@ export default {
   },
   created() {
     // 检查是否是管理员
-    if (!this.$store.state.MyInfo.admin) {
-      // this.$router.push("/goods");
-    }
+    // if (!this.$store.state.MyInfo.admin) {
+    //   // this.$router.push("/goods");
+    // }
   }
 };
 </script>
@@ -76,13 +76,14 @@ export default {
 .el-header {
   padding: 0 0;
   height: 48px !important;
+  width: 100%;
   position: relative;
 }
 
 .header {
   background-color: aqua;
   height: 48px;
-  width: 100vw;
+  width: 100%;
 }
 
 .el-main {

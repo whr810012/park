@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.rf-order-search .rf-header-box {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+.rf-order-search .rf-header-box .rf-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+.rf-order-search .rf-header-box .rf-header .rf-back {
+  margin-left: 8rpx;
+  height: 32px !important;
+  width: 32px !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.rf-order-search .rf-header-box .rf-header .rf-back .iconzuo {
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #303133;
+}
+.rf-order-search .rf-header-box .input-box {
+  width: 100%;
+  font-size: 24rpx;
+  box-sizing: border-box;
+  color: #999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow: hidden;
+  height: 60rpx;
+  background-color: #f8f8f8;
+  border-radius: 30rpx;
+  position: relative;
+  margin: 0 20rpx 0 10rpx;
+}
+.rf-order-search .rf-header-box .input-box .iconsousuo2 {
+  z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60rpx;
+  height: 60rpx;
+  font-size: 36rpx;
+  color: #303133;
+}
+.rf-order-search .rf-header-box .input-box input {
+  width: 100%;
+  padding-left: 28rpx;
+  height: 28rpx;
+  color: #606266;
+  font-size: 28rpx;
+}
+.rf-order-search .list-scroll-content {
+  position: relative;
+}

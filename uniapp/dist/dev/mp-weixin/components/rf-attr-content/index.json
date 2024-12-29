@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rf-number-box": "/components/rf-number-box/index"
+  }
+}

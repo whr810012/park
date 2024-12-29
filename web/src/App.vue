@@ -12,8 +12,12 @@ export default {
   // }
   created() {
     const userInfo = localStorage.getItem('userInfo')
-    if (userInfo) {
+    // 判断userInfo不是空对象
+
+    if (userInfo && userInfo !== 'undefined' && userInfo !== 'null' && userInfo !== '' && userInfo !== '{}') {
       this.$store.commit('setUserInfo', JSON.parse(userInfo))
+    } else {
+      this.$router.push('/login')
     }
 
   }

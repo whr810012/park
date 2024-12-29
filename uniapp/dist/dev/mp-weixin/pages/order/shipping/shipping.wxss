@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background: #f8f8f8;
+}
+.goods-section {
+  margin-top: 16rpx;
+  background: #fff;
+  padding-bottom: 1px;
+}
+.goods-section .g-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  height: 84rpx;
+  padding: 0 30rpx;
+  position: relative;
+}
+.goods-section .logo {
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 100px;
+}
+.goods-section .name {
+  font-size: 30rpx;
+  color: #606266;
+  margin-left: 24rpx;
+}
+.goods-section .g-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 20rpx 30rpx;
+}
+.goods-section .g-item image {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  display: block;
+  width: 220rpx;
+  height: 170rpx;
+  border-radius: 4rpx;
+}
+.goods-section .g-item .right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  padding-left: 16rpx;
+  overflow: hidden;
+}
+.goods-section .g-item .title {
+  font-size: 28rpx;
+  line-height: 32rpx;
+}
+.goods-section .g-item .spec {
+  font-size: 22rpx;
+  color: #909399;
+}
+.goods-section .g-item .price-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  font-size: 28rpx;
+  color: #303133;
+}
+.goods-section .g-item .price-box .price {
+  margin-bottom: 4rpx;
+}
+.goods-section .g-item .price-box .number {
+  font-size: 26rpx;
+  color: #606266;
+  margin-left: 20rpx;
+}
+.goods-section .g-item .price-box .status {
+  font-size: 24rpx;
+  color: #4399fc;
+}
+.goods-section .g-item .step-box {
+  position: relative;
+}
+.yt-list {
+  margin-top: 16rpx;
+  background: #fff;
+}
+.yt-list-cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 10rpx 30rpx 10rpx 40rpx;
+  line-height: 70rpx;
+  position: relative;
+}
+.yt-list-cell.cell-hover {
+  background: #fafafa;
+}
+.yt-list-cell.b-b:after {
+  left: 30rpx;
+}
+.yt-list-cell .cell-icon {
+  height: 32rpx;
+  width: 32rpx;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 32rpx;
+  border-radius: 4rpx;
+  margin-right: 12rpx;
+}
+.yt-list-cell .cell-icon.hb {
+  background: #ffaa0e;
+}
+.yt-list-cell .cell-icon.lpk {
+  background: #3ab54a;
+}
+.yt-list-cell .cell-more {
+  -webkit-align-self: center;
+          align-self: center;
+  font-size: 24rpx;
+  color: #909399;
+  margin-left: 8rpx;
+  margin-right: -10rpx;
+}
+.yt-list-cell .cell-tit {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 26rpx;
+  color: #909399;
+  margin-right: 10rpx;
+}
+.yt-list-cell .cell-tip {
+  font-size: 26rpx;
+}
+.yt-list-cell .cell-tip.disabled {
+  color: #909399;
+}
+.yt-list-cell.desc-cell .cell-tit {
+  max-width: 90rpx;
+}
+.yt-list-cell .desc {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  font-size: 28rpx;
+  color: #303133;
+}
+.yt-list-cell .copy {
+  margin-left: 10rpx;
+}
+.uni-timeline {
+  padding: 30rpx 40rpx;
+  background-color: #fff;
+}

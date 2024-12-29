@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "创建订单",
+  "usingComponents": {
+    "rf-image": "/components/rf-image/rf-image",
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "rf-picker": "/components/rf-picker/index",
+    "rf-no-data": "/components/rf-no-data/index"
+  }
+}

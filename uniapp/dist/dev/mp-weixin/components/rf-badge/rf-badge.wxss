@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+.uni-badge.data-v-63a5a578 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 100px;
+  text-align: center;
+  background-color: #f43530;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 0 6px;
+  opacity: 0.95;
+}
+.uni-badge--small.data-v-63a5a578 {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}

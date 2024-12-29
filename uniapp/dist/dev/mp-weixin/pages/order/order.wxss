@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page,
+.order {
+  background: #f8f8f8;
+  height: 100%;
+}
+page .order-search,
+.order .order-search {
+  padding: 10rpx 20rpx;
+  position: relative;
+}
+page .order-search .order-search-input,
+.order .order-search .order-search-input {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 40rpx;
+  padding: 10rpx 0 10rpx 30rpx;
+  color: #909399;
+}
+page .order-search .iconfont,
+.order .order-search .iconfont {
+  position: absolute;
+  right: 48rpx;
+  top: 22rpx;
+}
+page .swiper-box,
+.order .swiper-box {
+  height: calc(100% - 160rpx);
+}
+page .list-scroll-content,
+.order .list-scroll-content {
+  height: 100%;
+}
+page .uni-swiper-item,
+.order .uni-swiper-item {
+  height: auto;
+}
+page .input-content,
+.order .input-content {
+  margin-top: 16rpx;
+  padding: 40rpx 60rpx;
+  background-color: #fff;
+}
+page .input-content .input-item,
+.order .input-content .input-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0 30rpx;
+  background: #f8f6fc;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 4px;
+  margin-bottom: 30rpx;
+}
+page .input-content .input-item:last-child,
+.order .input-content .input-item:last-child {
+  margin-bottom: 0;
+}
+page .input-content .input-item .tit,
+.order .input-content .input-item .tit {
+  width: 100rpx;
+  font-size: 26rpx;
+  color: #606266;
+}
+page .input-content .input-item input,
+.order .input-content .input-item input {
+  width: calc(100% - 100rpx);
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+page .input-content .input-item .date,
+.order .input-content .input-item .date {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+page .input-content .input-item .gender-item,
+.order .input-content .input-item .gender-item {
+  margin-right: 20rpx;
+}
+page .input-content .input-item .gender-item .gender-item-text,
+.order .input-content .input-item .gender-item .gender-item-text {
+  padding-left: 10rpx;
+}
+page .input-content .input-item .gender-item radio .wx-radio-input.wx-radio-input-checked,
+.order .input-content .input-item .gender-item radio .wx-radio-input.wx-radio-input-checked {
+  background: #fa436a;
+  border-color: #fa436a;
+}

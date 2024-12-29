@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "uni-datetime-picker": "/components/uni-datetime-picker/uni-datetime-picker",
+    "rf-rate": "/components/rf-rate/rf-rate",
+    "rf-nav": "/components/rf-nav/index",
+    "rf-calendar": "/components/rf-calendar/rf-calendar",
+    "rf-item-popup": "/components/rf-item-popup/index",
+    "rf-badge": "/components/rf-badge/rf-badge",
+    "rf-live": "/components/rf-live/index",
+    "rf-attr-content": "/components/rf-attr-content/index"
+  }
+}

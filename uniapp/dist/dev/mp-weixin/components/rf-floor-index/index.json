@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rf-product-list": "/components/rf-product-list/index"
+  }
+}

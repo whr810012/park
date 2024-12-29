@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "收货地址",
+  "usingComponents": {
+    "rf-load-more": "/components/rf-load-more/rf-load-more"
+  }
+}

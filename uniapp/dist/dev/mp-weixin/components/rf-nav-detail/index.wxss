@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+/*顶部菜单*/
+.tui-menu-box.data-v-5a7e220c {
+  box-sizing: border-box;
+}
+.tui-menu-header.data-v-5a7e220c {
+  font-size: 34rpx;
+  color: #fff;
+  height: 32px;
+  margin-top: 45rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.tui-top-dropdown.data-v-5a7e220c {
+  z-index: 9999 !important;
+}
+.tui-menu-itembox.data-v-5a7e220c {
+  color: #fff;
+  padding: 40rpx 10rpx 0 10rpx;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  font-size: 26rpx;
+}
+.tui-menu-item.data-v-5a7e220c {
+  width: 22%;
+  height: 160rpx;
+  border-radius: 24rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+.tui-menu-item.data-v-5a7e220c:nth-of-type(4n) {
+  margin-right: 0;
+}
+.tui-badge-box.data-v-5a7e220c {
+  position: relative;
+}
+.tui-badge-box .iconfont.data-v-5a7e220c {
+  font-size: 40rpx;
+}
+.tui-badge-box .tui-badge-class.data-v-5a7e220c {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+.tui-msg-badge.data-v-5a7e220c {
+  top: -10px;
+}
+.tui-icon-up.data-v-5a7e220c {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.tui-menu-text.data-v-5a7e220c {
+  padding-top: 12rpx;
+}
+.tui-opcity .tui-menu-text.data-v-5a7e220c,
+.tui-opcity .tui-badge-box.data-v-5a7e220c {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.iconxiangxiajiantou.data-v-5a7e220c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+/*顶部菜单*/

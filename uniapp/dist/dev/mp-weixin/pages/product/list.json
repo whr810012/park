@@ -1,0 +1,17 @@
+{
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "backgroundColorTop": "#F7F7F7",
+  "backgroundColorBottom": "#F7F7F7",
+  "navigationBarTitleText": "商品列表 ",
+  "onReachBottomDistance": 50,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "uni-drawer": "/components/uni-drawer/drawer",
+    "rf-product-list": "/components/rf-product-list/index",
+    "rf-attr-content": "/components/rf-attr-content/index",
+    "rf-load-more": "/components/rf-load-more/rf-load-more",
+    "rf-top-drawer": "/components/rf-top-drawer/index"
+  }
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page {
+  background-color: #f8f8f8;
+}
+.feedback-list {
+  position: relative;
+}
+.feedback-list .wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.feedback-list .address-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.feedback-list .address-box .tag {
+  font-size: 24rpx;
+  margin-right: 10rpx;
+  border: 1px solid;
+  border-radius: 4rpx;
+  padding: 4rpx 10rpx;
+  line-height: 1;
+}
+.feedback-list .address-box .address {
+  font-size: 30rpx;
+  color: #303133;
+}
+.feedback-list .u-box {
+  font-size: 28rpx;
+  color: #909399;
+  margin-top: 16rpx;
+}
+.feedback-list .u-box .name {
+  margin-right: 30rpx;
+}

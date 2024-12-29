@@ -1,15 +1,17 @@
 <template>
-  <div class="">
+  <div style="height: 100%;">
     <el-menu
+    style="height: 100%;background:linear-gradient(145deg, #80f4f4 -0.95%, #000000 89.17%);"
       :default-active="activeIndex"
       class="el-menu-vertical-demo"
       @select="select"
       :collapse="!isCollapse"
       :style="menuHeight"
-      active-text-color="#ffffff"
+      active-text-color="#fff"
     >
-      <div class="icon_box">
-        <el-image class="img" :src="require('../menu/menuLogo.png')"></el-image>
+      <div class="icon_box" style="">
+        <div style="font-size: 18px;font-weight: 600;">停车后台</div>
+        <div style="font-size: 18px;font-weight: 600;">管理系统</div>
       </div>
       <el-menu-item
         v-for="(item, k) in menulist.menu"
@@ -18,6 +20,7 @@
       >
         <el-image
           :src="current === item.index ? item.icon : item.iconActive"
+          style="margin-right: 10px;"
         ></el-image>
         <span :class="item.index === 'message' ? 'badge' : ''">{{
           item.title
@@ -38,7 +41,7 @@ export default {
       logo: "../menu/menuLogo.png",
       menulist: [],
       current: "/",
-      activeIndex: "map",
+      activeIndex: "admin-manage",
     };
   },
   mounted() {
@@ -52,6 +55,10 @@ export default {
       this.$router.push({ path: `${index}` });
     },
   },
+  created() {
+    this.activeIndex = this.$route.name;
+    this.current = this.$route.name;
+  }
 };
 </script>
 
@@ -71,11 +78,14 @@ export default {
 
 .icon_box {
   height: 48px;
-  width: 140px;
-  background-color: #fff;
+  // width: 140px;
+  // background-color: #fff;
+  // 渐变色背景
+  background: linear-gradient(264deg, #80f4f4 -30.95%, #000000 89.17%);
   font-size: 24px;
   text-align: center;
-
+  color: #fff;
+  margin-bottom: 10px;
   .img {
     width: 100%;
     height: 100%;

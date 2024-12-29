@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+/* 图片加载中颜色 */
+/* 行为相关颜色 */
+page.data-v-150df9a4 {
+  background: #f8f8f8;
+}
+.footprint .row.data-v-150df9a4 {
+  width: 94%;
+  height: calc(22vw + 40rpx);
+  margin: 20rpx auto;
+  border-radius: 15rpx;
+  box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 4;
+  border: 0;
+}
+.footprint .row .menu.data-v-150df9a4 {
+  position: absolute;
+  width: 29%;
+  height: 100%;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 2;
+}
+.footprint .row .menu .icon.data-v-150df9a4 {
+  color: #fff;
+  font-size: 60rpx;
+}
+.footprint .row .carrier.data-v-150df9a4 {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  padding: 0 0;
+  height: 100%;
+  z-index: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+@-webkit-keyframes showMenu-data-v-150df9a4 {
+0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+100% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+}
+}
+@keyframes showMenu-data-v-150df9a4 {
+0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+100% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+}
+}
+@-webkit-keyframes closeMenu-data-v-150df9a4 {
+0% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+}
+100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+}
+@keyframes closeMenu-data-v-150df9a4 {
+0% {
+    -webkit-transform: translateX(-30%);
+            transform: translateX(-30%);
+}
+100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+}
+}
+.footprint .row .carrier.open.data-v-150df9a4 {
+  -webkit-animation: showMenu-data-v-150df9a4 0.25s linear both;
+          animation: showMenu-data-v-150df9a4 0.25s linear both;
+}
+.footprint .row .carrier.close.data-v-150df9a4 {
+  -webkit-animation: closeMenu-data-v-150df9a4 0.15s linear both;
+          animation: closeMenu-data-v-150df9a4 0.15s linear both;
+}
+.footprint .row .carrier .left.data-v-150df9a4 {
+  width: 22vw;
+  height: 22vw;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  position: relative;
+}
+.footprint .row .carrier .left .image.data-v-150df9a4 {
+  border-radius: 10rpx;
+  width: 22vw;
+  height: 22vw;
+}
+.footprint .row .carrier .left .tag.data-v-150df9a4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+.footprint .row .carrier .mid.data-v-150df9a4 {
+  width: 100%;
+  margin: 10rpx 10rpx 0;
+}
+.footprint .row .carrier .mid .title.data-v-150df9a4 {
+  height: 60rpx;
+  line-height: 1.2;
+  font-size: 28rpx;
+}
+.footprint .row .carrier .mid .data.data-v-150df9a4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 10rpx 0 5rpx;
+  font-size: 28rpx;
+  color: #606266;
+}
+.footprint .row .carrier .mid .data .item.data-v-150df9a4 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.footprint .row .carrier .mid .data .iconfont.data-v-150df9a4 {
+  color: #909399;
+  margin-right: 10rpx;
+}
+.footprint .row .carrier .mid .data .status.data-v-150df9a4 {
+  padding: 6rpx 20rpx;
+  background-color: #fa436a;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 24rpx;
+  border-radius: 6rpx;
+}
+.footprint .row .carrier .mid .bottom.data-v-150df9a4 {
+  line-height: 1.2;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 24rpx;
+  color: #909399;
+}
+.footprint .row .carrier .mid .bottom .price.data-v-150df9a4 {
+  font-size: 32rpx;
+}
